@@ -1,0 +1,12 @@
+<mat-dialog-content>
+  <h3 class="date" *ngIf="date">Last Comment: {{ date.toDateString() }}</h3>
+  <h1>Post Details: {{ data.id }}</h1>
+  <h2>{{ data.title }}</h2>
+  <p>{{ data.body }}</p>
+  <h3>Comments</h3>
+  <app-comment-list
+    [postId]="data.id"
+    (closeEmitter)="close()"
+    (dateEmitter)="getLastCommentDate($event)"></app-comment-list>
+</mat-dialog-content>
+
