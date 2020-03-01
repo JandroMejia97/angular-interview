@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+tr.detail-row {
+  height: 0;
+}
+
+tr.comment-row:not(.expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.comment-row:not(.expanded-row):active {
+  background: #efefef;
+}
+
+.comment-row td {
+  border-bottom-width: 0;
+}
+
+.comment-detail {
+  overflow: hidden;
+  display: flex;
+}
+
+.comment-description {
+  padding: 16px;
+}
