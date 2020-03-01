@@ -1,0 +1,14 @@
+<app-comment-table *ngIf="comments" [comments]="comments"></app-comment-table>
+<button
+  mat-raised-button
+  color="primary"
+  type="button"
+  (click)="emit()">
+  Emit
+</button>
+<button
+  mat-raised-button
+  type="button"
+  (click)="closeEmitter.emit()">
+  Close
+</button>
